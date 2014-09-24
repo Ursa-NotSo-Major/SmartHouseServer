@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be0d3957-5012-4681-9767-50fbe773184c" name="Default" comment="" />
+    <list default="true" id="be0d3957-5012-4681-9767-50fbe773184c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Readme" afterPath="$PROJECT_DIR$/Readme" />
+    </list>
     <ignored path="SmartHouse.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Readme" changelist="be0d3957-5012-4681-9767-50fbe773184c" time="1411464558670" ignored="false" />
+    <file path="/Readme" changelist="be0d3957-5012-4681-9767-50fbe773184c" time="1411591489024" ignored="false" />
     <file path="/node.py" changelist="be0d3957-5012-4681-9767-50fbe773184c" time="1411574607831" ignored="false" />
     <file path="/main.py" changelist="be0d3957-5012-4681-9767-50fbe773184c" time="1411586415586" ignored="false" />
     <file path="/connect.py" changelist="be0d3957-5012-4681-9767-50fbe773184c" time="1411539730570" ignored="false" />
     <file path="/controller.py" changelist="be0d3957-5012-4681-9767-50fbe773184c" time="1411586494029" ignored="false" />
     <file path="/parse.py" changelist="be0d3957-5012-4681-9767-50fbe773184c" time="1411578690002" ignored="false" />
-    <file path="/Dummy.txt" changelist="be0d3957-5012-4681-9767-50fbe773184c" time="1411590992609" ignored="false" />
+    <file path="/Dummy.txt" changelist="be0d3957-5012-4681-9767-50fbe773184c" time="1411591439693" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,19 +29,19 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Readme" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Readme" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Readme">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="14" selection-start="715" selection-end="715" vertical-scroll-proportion="0.0">
+            <state line="5" column="16" selection-start="178" selection-end="178" vertical-scroll-proportion="0.11980831">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="12" selection-start="235" selection-end="235" vertical-scroll-proportion="0.26357827">
+            <state line="11" column="12" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -92,7 +94,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Readme" />
         <option value="$PROJECT_DIR$/../Google Drive/Code/Python/Serial Interface For Arduino/interface.py" />
         <option value="$PROJECT_DIR$/connect.py" />
         <option value="$PROJECT_DIR$/arduino.py" />
@@ -100,6 +101,7 @@
         <option value="$PROJECT_DIR$/node.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/controller.py" />
+        <option value="$PROJECT_DIR$/Readme" />
       </list>
     </option>
   </component>
@@ -433,13 +435,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Readme">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="14" selection-start="715" selection-end="715" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../../Google Drive/Code/Python/Serial Interface For Arduino/interface.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="0" selection-start="688" selection-end="840" vertical-scroll-proportion="0.0" />
@@ -473,10 +468,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="12" selection-start="235" selection-end="235" vertical-scroll-proportion="0.26357827">
+        <state line="11" column="12" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Readme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="16" selection-start="178" selection-end="178" vertical-scroll-proportion="0.11980831">
+          <folding />
         </state>
       </provider>
     </entry>
