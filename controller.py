@@ -12,29 +12,31 @@ class Controller:
         self.port = port
         self.baudrate = baudrate
 
-    def connect(self):
-        self.arduino = serial.Serial(self.port, self.baudrate)
-        #Time for arduino to initialise
+    def connectArduino(self):
+        self.arduino = serial.Serial(self.port, self.baudrate, timeout=1)
+        #Time needed to init serial connection
         sleep(2)
         if self.arduino:
-            print
-            print "Arduino successfully connected!"
-            print
+            print "Arduino successfully connected"
 
-    def disconnect(self):
-        self.arduino.close()
-        print
-        print "Arduino successfully disconnected!"
-        print
+    def disconnectArduino(self):
+        if self.arduino.isOpen():
+            self.arduino.close()
+            print "Arduino successfully disconnected"
+        else:
+            print "The connection is closed."
 
     def isConnected(self):
-        try:
             return self.arduino.isOpen()
-        except:
-            return False
+
+    def readLine(self):
+        return self.arduino.readline()
 
     def read(self, chars):
         return self.arduino.read(chars)
+
+    def write(self, command):
+        self.arduino.write(command + '\r')
 
     def setPin(self, pin, value):
         command = "s" + str(zeroer(pin, 2)) + str(zeroer(value, 3)) + " "
