@@ -1,6 +1,7 @@
-import node, controller
+import node
+import controller
+import os
 from time import sleep
-import os, glob
 
 if __name__ == "__main__":
 

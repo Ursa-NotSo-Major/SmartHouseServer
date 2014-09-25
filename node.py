@@ -1,16 +1,16 @@
 class Node:
 
-    def __init__(self, initInformation):
-        self.ID = initInformation[0]
-        self.name = initInformation[1]
-        self.objects = initInformation[2]
-        self.objectsState = initInformation[3]
+    def __init__(self, settings):
+        self.ID = settings[0]
+        self.name = settings[1]
+        self.objects = settings[2]
+        self.objectsState = settings[3]
 
-    def refreshNode(self, newValues):
-        self.ID = newValues[0]
-        self.name = newValues[1]
-        self.objects = newValues[2]
-        self.objectsState = newValues[3]
+    def refreshNode(self, settings):
+        self.ID = settings[0]
+        self.name = settings[1]
+        self.objects = settings[2]
+        self.objectsState = settings[3]
         print "_______________________________________________"
         print "   Node ", self.name, "Refreshed"
         self.printInformation()
