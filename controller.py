@@ -13,7 +13,7 @@ class Controller:
         #Automatic port search
         tty = glob.glob("/dev/tty.*")
         for i in tty:
-            if "usbmodemfa" in i:
+            if "usbmodem" in i:
                 self.port = i
 
         self.arduino = None
@@ -21,11 +21,14 @@ class Controller:
         self.timeout = 1
 
     def connectArduino(self):
-        self.arduino = serial.Serial(port=self.port, baudrate=self.baudrate, timeout=self.timeout)
-        #Time needed to init serial connection
-        sleep(2)
-        if self.arduino:
-            print "Arduino successfully connected"
+        try:
+            self.arduino = serial.Serial(port=self.port, baudrate=self.baudrate, timeout=self.timeout)
+            #Time needed to init serial connection
+            sleep(2)
+            if self.arduino:
+                print "Arduino successfully connected"
+        except:
+            print "Failed to connect arduino"
 
     def disconnectArduino(self):
         if self.arduino.isOpen():
