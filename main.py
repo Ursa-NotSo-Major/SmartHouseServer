@@ -3,6 +3,12 @@ import controller
 import os
 from time import sleep
 
+
+def speak(line):
+
+    cmd = """osascript -e 'say "%s" with stopping current speech'""" % line
+    os.system(cmd)
+
 if __name__ == "__main__":
 
     #Connect controller
@@ -14,5 +20,7 @@ if __name__ == "__main__":
     hallNode = node.Node(i)
     hallNode.printInformation()
 
-    contr.setPin(13, hallNode.objects[0])
-    
+    contr.setPin(13, hallNode.objectsState[0])
+    print contr.digitalRead(13)
+    contr.setPin(13, 0)
+    print contr.digitalRead(13)

@@ -54,3 +54,13 @@ class Controller:
         self.arduino.write(command)
         print "Command: " + command
         sleep(0.001)
+
+    def digitalRead(self, pin):
+        p = str(zeroer(pin, 2))
+        self.arduino.write("c" + p + "d ")
+        return int(self.arduino.readline())
+
+    def analogRead(self, pin):
+        p = str(zeroer(pin, 2))
+        self.arduino.write("c" + p + "a ")
+        return self.arduino.readline()
