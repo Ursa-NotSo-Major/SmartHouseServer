@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be0d3957-5012-4681-9767-50fbe773184c" name="Default" comment="" />
+    <list default="true" id="be0d3957-5012-4681-9767-50fbe773184c" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Readme 2.pages/Data/Hardcover_bullet_black-13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Readme 2.pages/Data/Screen Shot 2014-10-14 at 19.40-17.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Readme 2.pages/Data/Screen Shot 2014-10-14 at 19.40.22-16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Readme 2.pages/Index.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Readme 2.pages/Metadata/BuildVersionHistory.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Readme 2.pages/Metadata/DocumentIdentifier" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Readme 2.pages/Metadata/Properties.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Readme 2.pages/preview-micro.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Readme 2.pages/preview-web.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Readme 2.pages/preview.jpg" afterPath="" />
+    </list>
     <ignored path="SmartHouse.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Readme" changelist="be0d3957-5012-4681-9767-50fbe773184c" time="1411592072177" ignored="false" />
