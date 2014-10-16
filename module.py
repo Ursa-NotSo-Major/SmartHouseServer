@@ -1,4 +1,4 @@
-class Node:
+class Module:
 
     def __init__(self, settings):
         self.ID = settings[0]
