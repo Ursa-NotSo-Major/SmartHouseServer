@@ -1,13 +1,17 @@
 import serial
 from parse import zeroer
-from parse import arduinoSearch
 from time import sleep
+import glob
 
 
 class Controller:
 
     def __init__(self):
-        self.port = arduinoSearch()
+        tty = glob.glob("/dev/tty.*")
+        for i in tty:
+            if "usbmodem" in i:
+                self.port = i
+
         self.arduino = None
         self.baudrate = 9600
         self.timeout = 1
@@ -25,11 +29,14 @@ class Controller:
             return 0
 
     def disconnectArduino(self):
-        if self.arduino.isOpen():
-            self.arduino.close()
-            print "Arduino successfully disconnected"
-        else:
-            print "The connection is closed."
+        try:
+            if self.arduino.isOpen():
+                self.arduino.close()
+                print "Arduino successfully disconnected"
+            else:
+                print "The connection wasn't opened yet."
+        except:
+            print "Arduino is not connected."
 
     def isConnected(self):
             return self.arduino.isOpen()

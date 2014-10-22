@@ -1,6 +1,3 @@
-import glob
-
-
 def zeroer(string, val):
     string = str(string)
     for i in range(0, int(val) - len(string)):
@@ -8,8 +5,8 @@ def zeroer(string, val):
     return str(string)
 
 
-def arduinoSearch():
-    tty = glob.glob("/dev/tty.*")
-    for i in tty:
-        if "usbmodem" in i:
-            return i
+def fromServerToController(array):
+    string = ""
+    for i in range(0, len(array)):
+        string += str(array[i])
+    return string
